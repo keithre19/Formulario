@@ -93,7 +93,7 @@
         android:id="@+id/imageView"
         android:layout_width="77dp"
         android:layout_height="61dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -101,16 +101,44 @@
 
     <Button
         android:id="@+id/btnIngresar"
-        android:background="@drawable/buttons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="50dp"
+        android:background="@drawable/buttons"
         android:text="Ingresar"
         android:textColorLink="#3F51B5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCorreo" />
+
+    <Spinner
+        android:id="@+id/spinnerDepartments"
+        android:layout_width="284dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="10dp"
+        android:entries="@array/spinnerDepartments"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIngresar" />
+
+    <Spinner
+        android:id="@+id/spinnerCoursesUniversity"
+        android:layout_width="282dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerDepartments" />
+
+    <Spinner
+        android:id="@+id/spinnerCivilStatus"
+        android:layout_width="281dp"
+        android:layout_height="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCoursesUniversity" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
