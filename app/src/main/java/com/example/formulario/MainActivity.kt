@@ -40,11 +40,11 @@ class MainActivity : AppCompatActivity() {
                 correo.error = "Debe llenar este campo"
             } else {
                 val enviarDatosIntent = Intent(this, ReceiveDataForm::class.java).apply{
-                    putExtra("nombre", nombre.text.toString())
-                    putExtra("apellido", apellido.text.toString())
-                    putExtra("telefono", telefono.text.toString())
-                    putExtra("edad", edad.text.toString())
-                    putExtra("correo", correo.text.toString())
+                    putExtra("name", nombre.text.toString())
+                    putExtra("lastName", apellido.text.toString())
+                    putExtra("phone", telefono.text.toString())
+                    putExtra("age", edad.text.toString())
+                    putExtra("email", correo.text.toString())
                 }
                 startActivity(enviarDatosIntent)
             }
