@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Formulario</string>
+    <string-array name="spinner_Departments">
+        <item>Guatemala</item>
+        <item>Quetzaltenango</item>
+        <item>Suchitepéquez</item>
+        <item>Escuintla</item>
+        <item>San Marcos</item>
+        <item>Huehuetenango</item>
+    </string-array>
 </resources>
